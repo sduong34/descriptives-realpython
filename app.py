@@ -12,12 +12,10 @@ x
 [8.0, 1, 2.5, 4, 28.0]
 x_with_nan
 [8.0, 1, 2.5, nan, 4, 28.0]
-
-
 math.isnan(np.nan), np.isnan(math.nan)
-math.isnan(y_with_nan[3]), np.isnan(y_with_nan[3])
 
 y, y_with_nan = np.array(x), np.array(x_with_nan)
+math.isnan(y_with_nan[3]), np.isnan(y_with_nan[3])
 z, z_with_nan = pd.Series(x), pd.Series(x_with_nan)
 
 #mean using imported python statistics function
